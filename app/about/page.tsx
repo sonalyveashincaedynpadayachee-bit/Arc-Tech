@@ -4,15 +4,17 @@ import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Reveal, RevealGroup, RevealItem } from '@/components/ui/Reveal';
 import { FounderPortrait } from '@/components/ui/FounderPortrait';
+import { FounderVitals } from '@/components/ui/FounderVitals';
 import { ArcMark } from '@/components/ui/Logo';
 import { FinalCta } from '@/components/sections/FinalCta';
 import { values, howWeWork } from '@/lib/content/values';
+import { founderQuotes } from '@/lib/content/founder';
 import { siteConfig } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Arc Tech is a boutique AI automation studio founded by Nadia Kessler, built on precision, restraint, and infrastructure that outlasts the engagement.',
+    'Arc Tech is a boutique AI automation studio founded by Sonaly Singh, built on precision, restraint, and infrastructure that outlasts the engagement.',
   alternates: { canonical: '/about' },
 };
 
@@ -36,26 +38,58 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="relative bg-bg-base pb-section">
+      <section id="founder" className="relative overflow-hidden bg-bg-base pb-section scroll-mt-24">
         <Container>
-          <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-12">
-            <Reveal className="lg:col-span-5">
-              <FounderPortrait />
+          {/* Masthead row */}
+          <Reveal>
+            <div className="flex items-center justify-between gap-6 border-b border-line-subtle pb-6">
+              <div className="flex items-baseline gap-4">
+                <span className="numeral text-small">01</span>
+                <Eyebrow>The Founder Profile</Eyebrow>
+              </div>
+              <span className="eyebrow hidden text-text-tertiary sm:inline">
+                {siteConfig.city} · Est. {siteConfig.founder.foundedYear}
+              </span>
+            </div>
+          </Reveal>
+
+          {/* Headline splash */}
+          <div className="relative mt-10 sm:mt-14">
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -top-6 right-0 select-none font-display text-[10rem] leading-none sm:-top-10 sm:text-[14rem]"
+              style={{ color: 'transparent', WebkitTextStroke: '1px rgba(229,228,226,0.06)' }}
+            >
+              01
+            </span>
+            <Reveal delay={0.05}>
+              <h2 className="relative font-display text-display font-normal leading-[0.95] tracking-tight text-text-primary">
+                {siteConfig.founder.name}
+              </h2>
             </Reveal>
+            <Reveal delay={0.1}>
+              <p className="relative mt-5 max-w-xl text-lead leading-relaxed text-text-secondary">
+                Founder &amp; Principal Architect — on precision, restraint, and why
+                she still signs every system herself.
+              </p>
+            </Reveal>
+          </div>
 
-            <div className="flex flex-col gap-8 lg:col-span-6 lg:col-start-7 lg:pt-6">
-              <Reveal>
-                <div className="flex items-baseline gap-4">
-                  <span className="numeral text-small">01</span>
-                  <Eyebrow>Founder &amp; Principal Architect</Eyebrow>
-                </div>
+          {/* Feature spread */}
+          <div className="mt-16 grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-12">
+            <div className="flex flex-col gap-6 lg:col-span-5">
+              <Reveal delay={0.1}>
+                <FounderPortrait />
+                <p className="mt-4 font-display text-small italic text-text-tertiary">
+                  {siteConfig.founder.name}, photographed at the Arc Tech studio.
+                </p>
               </Reveal>
-              <Reveal delay={0.05}>
-                <h2 className="font-display text-h1 font-normal leading-[1.02] text-text-primary">
-                  {siteConfig.founder.name}
-                </h2>
+              <Reveal delay={0.18}>
+                <FounderVitals />
               </Reveal>
+            </div>
 
+            <div className="flex flex-col gap-8 lg:col-span-7">
               <Reveal delay={0.1} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
                 <p className="drop-cap">
                   I started as a data engineer at two venture-backed startups, building
@@ -69,11 +103,21 @@ export default function AboutPage() {
                   different costume: the business depended on them showing up daily.
                   Hiring didn&rsquo;t fix it — it just added more people to manage.
                 </p>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <blockquote className="border-l border-purple-500/50 pl-6">
+                  <p className="font-display text-h3 font-normal italic leading-snug text-platinum-200">
+                    &ldquo;{founderQuotes.pull}&rdquo;
+                  </p>
+                </blockquote>
+              </Reveal>
+
+              <Reveal delay={0.25} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
                 <p>
                   I started Arc Tech in 2023 to build the alternative: systems precise
                   enough to trust with real operations, restrained enough to never feel
-                  bolted on. I still lead the architecture on every engagement
-                  personally — that won&rsquo;t change as we grow.
+                  bolted on.
                 </p>
                 <p>
                   Before Arc Tech, I led data infrastructure teams and built automation
@@ -83,19 +127,32 @@ export default function AboutPage() {
                 </p>
               </Reveal>
 
-              <Reveal delay={0.15}>
-                <a
-                  href={siteConfig.founder.linkedin}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="group inline-flex items-center gap-2 text-small font-medium text-text-primary"
-                >
-                  <Linkedin size={18} strokeWidth={1.25} />
-                  Connect on LinkedIn
-                  <span className="transition-transform duration-200 ease-state group-hover:translate-x-1">
-                    →
-                  </span>
-                </a>
+              <Reveal delay={0.3}>
+                <blockquote className="border-l border-purple-500/50 pl-6">
+                  <p className="font-display text-h3 font-normal italic leading-snug text-platinum-200">
+                    &ldquo;{founderQuotes.close}&rdquo;
+                  </p>
+                </blockquote>
+              </Reveal>
+
+              <Reveal delay={0.35}>
+                <div className="flex flex-col gap-3 border-t border-line-subtle pt-6">
+                  <a
+                    href={siteConfig.founder.linkedin}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="group inline-flex items-center gap-2 text-small font-medium text-text-primary"
+                  >
+                    <Linkedin size={18} strokeWidth={1.25} />
+                    Connect on LinkedIn
+                    <span className="transition-transform duration-200 ease-state group-hover:translate-x-1">
+                      →
+                    </span>
+                  </a>
+                  <p className="eyebrow text-text-tertiary">
+                    Interview condensed and edited for length and clarity.
+                  </p>
+                </div>
               </Reveal>
             </div>
           </div>

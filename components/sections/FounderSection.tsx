@@ -1,8 +1,9 @@
-import { Linkedin } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Reveal } from '@/components/ui/Reveal';
 import { FounderPortrait } from '@/components/ui/FounderPortrait';
+import { Button } from '@/components/ui/Button';
+import { founderQuotes } from '@/lib/content/founder';
 import { siteConfig } from '@/lib/site-config';
 
 export function FounderSection() {
@@ -28,46 +29,26 @@ export function FounderSection() {
               </h2>
             </Reveal>
 
-            <Reveal delay={0.1} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
-              <p className="drop-cap">
-                I spent six years building automation inside venture-backed startups
-                before founding Arc Tech in 2023. I kept seeing the same pattern:
-                founders who built something worth scaling, then got buried by the
-                weight of scaling it.
-              </p>
-              <p>
-                Automation isn&rsquo;t a cost center or a nice-to-have. It&rsquo;s the
-                difference between a business that depends on its founder and one that
-                compounds without her. That&rsquo;s the entire premise of this studio.
-              </p>
-              <p>
-                I take on a handful of engagements a quarter, on purpose. My name is on
-                every system&rsquo;s architecture, not just the invoice.
+            <Reveal delay={0.1}>
+              <p className="max-w-xl text-body leading-relaxed text-text-secondary">
+                I started Arc Tech in {siteConfig.founder.foundedYear} after watching
+                founder after founder get buried by the weight of their own growth.
+                My name is on every system&rsquo;s architecture, not just the invoice.
               </p>
             </Reveal>
 
             <Reveal delay={0.15}>
               <blockquote className="border-l border-purple-500/50 pl-6">
                 <p className="font-display text-h3 font-normal italic leading-snug text-platinum-200">
-                  &ldquo;The best automation is invisible. You only notice it in what stops
-                  going wrong.&rdquo;
+                  &ldquo;{founderQuotes.close}&rdquo;
                 </p>
               </blockquote>
             </Reveal>
 
             <Reveal delay={0.2}>
-              <a
-                href={siteConfig.founder.linkedin}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="group inline-flex items-center gap-2 text-small font-medium text-text-primary"
-              >
-                <Linkedin size={18} strokeWidth={1.25} />
-                Connect on LinkedIn
-                <span className="transition-transform duration-200 ease-state group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
+              <Button href="/about#founder" variant="tertiary" className="self-start">
+                Read the full profile
+              </Button>
             </Reveal>
           </div>
         </div>

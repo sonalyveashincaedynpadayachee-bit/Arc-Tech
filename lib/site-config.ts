@@ -10,9 +10,10 @@ export const siteConfig = {
   calendlyUrl: 'https://cal.com/arctech/strategy-call',
   currentBookingQuarter: 'Q4 2026',
   founder: {
-    name: 'Nadia Kessler',
+    name: 'Sonaly Singh',
     title: 'Founder & Principal Architect',
-    linkedin: 'https://www.linkedin.com/in/nadiakessler',
+    linkedin: 'https://www.linkedin.com/in/sonalysingh',
+    foundedYear: '2023',
   },
   socials: {
     linkedin: 'https://www.linkedin.com/company/arc-tech-studio',

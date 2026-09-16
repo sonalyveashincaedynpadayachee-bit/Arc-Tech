@@ -11,7 +11,7 @@ export function FounderPortrait() {
           viewBox="0 0 480 560"
           className="aspect-[6/7] w-full"
           role="img"
-          aria-label="Editorial duotone light study representing Nadia Kessler, Founder & Principal Architect of Arc Tech"
+          aria-label="Editorial duotone light study representing Sonaly Singh, Founder & Principal Architect of Arc Tech"
         >
           <defs>
             <linearGradient id="founder-bg" x1="0" y1="0" x2="1" y2="1">
@@ -64,7 +64,7 @@ export function FounderPortrait() {
             fill="#E5E4E2"
             opacity="0.16"
           >
-            NK
+            SS
           </text>
 
           <g opacity="0.7">
