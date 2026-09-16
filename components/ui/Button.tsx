@@ -72,7 +72,7 @@ export function Button(props: ButtonProps) {
           className="absolute inset-0 -z-10"
           style={{
             background:
-              'linear-gradient(135deg, #FFFFFF 0%, #E5E4E2 22%, #C084FC 48%, #F5F4F2 68%, #CFCDC9 100%)',
+              'linear-gradient(135deg, #FAFAF9 0%, #E5E4E2 22%, #C084FC 48%, #F5F4F2 68%, #CFCDC9 100%)',
             backgroundSize: '220% 220%',
           }}
         />

@@ -40,7 +40,7 @@
   /* Gradients */
   --grad-platinum: linear-gradient(135deg, #FFFFFF 0%, #E5E4E2 22%, #A9A6A1 48%, #F5F4F2 68%, #CFCDC9 100%);
   --grad-purple: linear-gradient(135deg, #A855F7 0%, #6D28D9 55%, #4C1D95 100%);
-  --grad-arc: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(124,58,237,0.25) 0%, transparent 70%);
+  --grad-arc: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(124,58,237,0.16) 0%, transparent 70%);
 
   /* Type scale */
   --fs-display: clamp(3.25rem, 7.5vw, 7rem);
