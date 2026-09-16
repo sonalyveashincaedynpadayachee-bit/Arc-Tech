@@ -29,7 +29,7 @@ export function FounderSection() {
             </Reveal>
 
             <Reveal delay={0.1} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
-              <p>
+              <p className="drop-cap">
                 I spent six years building automation and data infrastructure inside
                 venture-backed companies before I started Arc Tech. I kept watching the
                 same pattern: founders who built something worth scaling, then got buried

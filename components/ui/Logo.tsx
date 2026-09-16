@@ -1,6 +1,12 @@
 import { cn } from '@/lib/cn';
 
-export function ArcMark({ className }: { className?: string }) {
+export function ArcMark({
+  className,
+  animated = false,
+}: {
+  className?: string;
+  animated?: boolean;
+}) {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -13,8 +19,15 @@ export function ArcMark({ className }: { className?: string }) {
         strokeWidth="2"
         strokeLinecap="round"
         fill="none"
+        className={animated ? 'arc-mark-path' : undefined}
       />
-      <circle cx="23" cy="5" r="2.25" fill="#C084FC" />
+      <circle
+        cx="23"
+        cy="5"
+        r="2.25"
+        fill="#C084FC"
+        className={animated ? 'arc-mark-dot' : undefined}
+      />
       <defs>
         <linearGradient id="arc-mark-gradient" x1="4" y1="24" x2="23" y2="5">
           <stop offset="0%" stopColor="#E5E4E2" />
@@ -25,7 +38,13 @@ export function ArcMark({ className }: { className?: string }) {
   );
 }
 
-export function Wordmark({ className }: { className?: string }) {
+export function Wordmark({
+  className,
+  animated = false,
+}: {
+  className?: string;
+  animated?: boolean;
+}) {
   return (
     <span
       className={cn(
@@ -33,7 +52,7 @@ export function Wordmark({ className }: { className?: string }) {
         className
       )}
     >
-      <ArcMark />
+      <ArcMark animated={animated} />
       Arc Tech
     </span>
   );

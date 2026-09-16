@@ -3,6 +3,7 @@ import { instrumentSerif, interTight, jetBrainsMono } from './fonts';
 import { Nav } from '@/components/sections/Nav';
 import { Footer } from '@/components/sections/Footer';
 import { GrainOverlay } from '@/components/ui/GrainOverlay';
+import { ScrollFavicon } from '@/components/ui/ScrollFavicon';
 import { siteConfig } from '@/lib/site-config';
 import './globals.css';
 
@@ -80,6 +81,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <GrainOverlay />
+        <ScrollFavicon />
         <Nav />
         <main id="main-content">{children}</main>
         <Footer />

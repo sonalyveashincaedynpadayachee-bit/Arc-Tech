@@ -119,6 +119,52 @@ body {
   }
 }
 
+/* Editorial drop cap — first paragraph of the founder's letter */
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-size: 5.5em;
+  line-height: 0.78;
+  padding-right: 0.1em;
+  padding-top: 0.05em;
+  color: var(--platinum-200);
+  background: var(--grad-platinum);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .drop-cap::first-letter {
+    color: transparent;
+  }
+}
+
+/* Logo mark — draws itself in on hover/focus, like a signature */
+.arc-mark-path {
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  transition: stroke-dashoffset 0.7s var(--ease-entrance);
+}
+
+.arc-mark-dot {
+  opacity: 0;
+  transform-origin: 23px 5px;
+  transform: scale(0.3);
+  transition: opacity 0.25s var(--ease-state) 0.55s, transform 0.25s var(--ease-state) 0.55s;
+}
+
+.group:hover .arc-mark-path,
+.group:focus-visible .arc-mark-path {
+  stroke-dashoffset: 0;
+}
+
+.group:hover .arc-mark-dot,
+.group:focus-visible .arc-mark-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* Grain overlay */
 .grain-overlay {
   position: fixed;

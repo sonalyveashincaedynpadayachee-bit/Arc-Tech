@@ -57,7 +57,7 @@ export default function AboutPage() {
               </Reveal>
 
               <Reveal delay={0.1} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
-                <p>
+                <p className="drop-cap">
                   I started my career as a data engineer inside two venture-backed
                   startups, building the pipelines that fed their growth teams. By the
                   time I left the second one, I&rsquo;d shipped internal automation that

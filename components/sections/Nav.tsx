@@ -42,8 +42,8 @@ export function Nav() {
       )}
     >
       <nav className="container-arc flex h-20 items-center justify-between">
-        <Link href="/" aria-label="Arc Tech home" className="shrink-0">
-          <Wordmark />
+        <Link href="/" aria-label="Arc Tech home" className="group shrink-0">
+          <Wordmark animated />
         </Link>
 
         <ul className="hidden items-center gap-9 lg:flex">
