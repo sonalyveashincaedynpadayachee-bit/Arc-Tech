@@ -31,8 +31,8 @@ export default function ServicesPage() {
               <em className="metal italic">One studio.</em>
             </h1>
             <p className="max-w-[58ch] text-lead leading-relaxed text-text-secondary">
-              Every engagement draws from the same six capabilities, combined to fit the
-              shape of your operation — never sold as a bundle you don&rsquo;t need.
+              Every engagement draws from these six capabilities, combined to fit your
+              operation — never sold as a bundle you don&rsquo;t need.
             </p>
           </Reveal>
         </Container>

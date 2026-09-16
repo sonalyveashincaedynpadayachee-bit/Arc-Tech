@@ -20,20 +20,20 @@ export const caseStudies: CaseStudy[] = [
     client: 'A 3-location HVAC and plumbing group',
     headline: 'Cut response time from 9 hours to 4 minutes',
     summary:
-      'A voice and SMS agent now answers, qualifies, and books every inbound call across three dispatch lines, before a human ever picks up the phone.',
+      'A voice and SMS agent answers, qualifies, and books every inbound call across three dispatch lines before a human picks up.',
     challenge:
-      'Inbound calls were routed through a single shared inbox monitored during business hours only. After-hours and overflow calls averaged a 9-hour callback window, and 40% of callers had already booked a competitor by the time they were reached.',
+      'Inbound calls routed through one shared inbox, monitored only during business hours. After-hours callbacks averaged 9 hours — and 40% of callers had already booked a competitor by then.',
     approach: [
-      'Mapped every call type across the three locations and built decision trees for the seven most common intents',
-      'Deployed a voice agent trained on the company’s pricing logic, service radius, and technician availability',
-      'Connected the agent directly to the dispatch calendar for real-time booking, not a callback queue',
-      'Built a fallback escalation path to an on-call manager for emergency-tier requests',
+      'Mapped call types across all three locations into decision trees for the top 7 intents',
+      'Trained the voice agent on pricing, service radius, and technician availability',
+      'Wired the agent directly to the dispatch calendar for real-time booking',
+      'Built an escalation path to the on-call manager for emergencies',
     ],
     architecture: [
       'Inbound telephony via Twilio, routed to a custom voice agent',
       'Real-time availability sync with the dispatch scheduling system',
-      'CRM write-back for every call, transcribed and tagged automatically',
-      'Manager escalation via SMS for jobs flagged as emergency-tier',
+      'CRM write-back for every call, auto-transcribed and tagged',
+      'SMS escalation to the manager for emergency-tier jobs',
     ],
     results: [
       { metric: '9hr → 4min', label: 'Average response time' },
@@ -41,8 +41,7 @@ export const caseStudies: CaseStudy[] = [
       { metric: '24/7', label: 'Coverage, zero added headcount' },
     ],
     testimonial: {
-      quote:
-        'We were losing jobs every single night to whoever answered the phone first. That stopped being a problem in the first two weeks.',
+      quote: 'We lost jobs every night to whoever answered first. That stopped in the first two weeks.',
       attribution: 'Operations Director',
     },
   },
@@ -53,14 +52,14 @@ export const caseStudies: CaseStudy[] = [
     client: 'A 12-person B2B advisory practice',
     headline: '3.4x pipeline growth in one quarter, zero new hires',
     summary:
-      'An enrichment, scoring, and sequencing system replaced a founder’s manual prospecting routine, filling the pipeline while she stayed in client delivery.',
+      'A scoring and sequencing system replaced the founder’s manual prospecting — filling the pipeline while she stayed in delivery.',
     challenge:
-      'The founder was the only source of new business. Prospecting happened in the gaps between client work, which meant it happened rarely, and the pipeline reflected that inconsistency month over month.',
+      'The founder was the only source of new business, squeezed into gaps between client work — rarely, and the pipeline showed it monthly.',
     approach: [
-      'Built an ideal-customer profile model from twenty-four months of closed-won and closed-lost data',
-      'Automated enrichment and scoring for every inbound and sourced lead',
+      'Built an ideal-customer model from 24 months of closed-won and closed-lost data',
+      'Automated enrichment and scoring for every lead, inbound or sourced',
       'Designed a six-touch, multi-channel sequence personalized at scale',
-      'Routed hot leads directly to the founder’s calendar, cold leads into nurture',
+      'Routed hot leads to the founder’s calendar, cold leads to nurture',
     ],
     architecture: [
       'Enrichment via a firmographic and intent data provider, orchestrated in n8n',
@@ -75,7 +74,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote:
-        'I stopped being the bottleneck on my own growth. The pipeline builds itself now, and I get to actually do the work I’m good at.',
+        'I stopped being the bottleneck on my own growth. The pipeline runs itself — I get to do the work I’m good at.',
       attribution: 'Founder & Managing Director',
     },
   },
@@ -86,19 +85,19 @@ export const caseStudies: CaseStudy[] = [
     client: 'A 40-person DTC apparel brand',
     headline: '35% faster onboarding for a growing support team',
     summary:
-      'A private RAG-based copilot trained on SOPs, return policies, and product data now answers the questions that used to interrupt the COO six times a day.',
+      'A private RAG copilot now answers what used to interrupt the COO 6 times daily.',
     challenge:
-      'Institutional knowledge lived in one person’s head and a disorganized shared drive. New support hires took nearly six weeks to ramp to full productivity, and the COO fielded the same repeat questions daily.',
+      'Institutional knowledge lived in one head and a messy shared drive. New hires took 6 weeks to ramp; the COO fielded the same questions daily.',
     approach: [
-      'Consolidated and restructured two years of scattered SOP documentation',
-      'Built a retrieval-augmented copilot scoped by role and department',
+      'Consolidated 2 years of scattered SOP documentation',
+      'Built a RAG copilot, scoped by role and department',
       'Deployed inside the team’s existing Slack workspace',
-      'Instrumented usage analytics to surface undocumented knowledge gaps',
+      'Instrumented analytics to surface undocumented knowledge gaps',
     ],
     architecture: [
-      'Document ingestion pipeline with automatic re-indexing on SOP updates',
+      'Ingestion pipeline that re-indexes automatically on SOP updates',
       'Vector store scoped by department-level access controls',
-      'Slack-native interface with citation links back to source documents',
+      'Slack-native interface citing links back to source docs',
       'Weekly gap report surfaced to the operations team',
     ],
     results: [
@@ -108,7 +107,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote:
-        'New hires used to ask me the same six questions every week. Now they ask the copilot, and I get my afternoons back.',
+        'New hires asked me the same six questions weekly. Now they ask the copilot — I get my afternoons back.',
       attribution: 'Chief Operating Officer',
     },
   },
@@ -119,17 +118,17 @@ export const caseStudies: CaseStudy[] = [
     client: 'A Series A vertical SaaS platform',
     headline: 'AI feature shipped to production in 19 days',
     summary:
-      'A bespoke LLM integration was wired directly into the product’s existing backend, replacing a shelved prototype the internal team couldn’t get past a demo.',
+      'A bespoke LLM integration replaced a shelved prototype, wired directly into the product’s existing backend.',
     challenge:
-      'The engineering team had a working proof of concept that fell apart under real usage — no fallback logic, unpredictable latency, and no monitoring. It had been shelved for two quarters.',
+      'The proof of concept fell apart under real usage — no fallback logic, unpredictable latency, no monitoring. Shelved for 2 quarters.',
     approach: [
-      'Rebuilt the integration at the API level against the existing data model',
+      'Rebuilt the integration at the API level',
       'Introduced provider fallback logic and defined latency budgets',
-      'Established a versioned, testable prompt library with regression tests',
+      'Built a versioned prompt library with regression tests',
       'Instrumented cost and performance monitoring before launch',
     ],
     architecture: [
-      'Direct API integration into the product’s existing service layer',
+      'Direct API integration into the existing service layer',
       'Multi-provider fallback routing for availability',
       'Prompt version control with automated regression testing',
       'Real-time cost and latency dashboards',
@@ -141,7 +140,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote:
-        'They didn’t hand us a prototype. They handed us infrastructure our own engineers could maintain and extend.',
+        'They didn’t hand us a prototype — they handed us infrastructure our engineers could maintain.',
       attribution: 'Head of Product',
     },
   },

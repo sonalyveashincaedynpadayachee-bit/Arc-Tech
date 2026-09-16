@@ -58,33 +58,28 @@ export default function AboutPage() {
 
               <Reveal delay={0.1} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
                 <p className="drop-cap">
-                  I started my career as a data engineer inside two venture-backed
-                  startups, building the pipelines that fed their growth teams. By the
-                  time I left the second one, I&rsquo;d shipped internal automation that
-                  quietly saved the operations team over 20 hours a week — nobody had
-                  asked me to build it. I just couldn&rsquo;t watch the manual process
-                  anymore.
+                  I started as a data engineer at two venture-backed startups, building
+                  the pipelines that fed their growth teams. By the second one, I&rsquo;d
+                  shipped internal automation saving the ops team 20+ hours a week —
+                  nobody asked me to build it. I just couldn&rsquo;t watch the manual
+                  process anymore.
                 </p>
                 <p>
-                  That became the pattern. Every founder I talked to after that had the
-                  same problem wearing a different costume: too much of the business
-                  depended on them personally showing up, every day, to keep it moving.
-                  Hiring didn&rsquo;t fix it. It just added more people who also needed
-                  managing.
+                  That became the pattern. Every founder had the same problem in a
+                  different costume: the business depended on them showing up daily.
+                  Hiring didn&rsquo;t fix it — it just added more people to manage.
                 </p>
                 <p>
                   I started Arc Tech in 2023 to build the alternative: systems precise
-                  enough to be trusted with real operations, and restrained enough that
-                  they never feel like a Rube Goldberg machine bolted onto your business.
-                  I still lead the architecture on every engagement personally. That
-                  won&rsquo;t change as the studio grows.
+                  enough to trust with real operations, restrained enough to never feel
+                  bolted on. I still lead the architecture on every engagement
+                  personally — that won&rsquo;t change as we grow.
                 </p>
                 <p>
                   Before Arc Tech, I led data infrastructure teams and built automation
-                  tooling used across e-commerce, healthcare, and professional services.
-                  I hold a degree in computer science and have spent the years since
-                  turning that foundation into something founders can actually use
-                  without an engineering team of their own.
+                  used across e-commerce, healthcare, and professional services. Since
+                  then, I&rsquo;ve turned a computer science degree into tools founders
+                  can run without an engineering team.
                 </p>
               </Reveal>
 

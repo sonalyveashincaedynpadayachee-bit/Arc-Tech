@@ -3,25 +3,25 @@ export const values = [
     numeral: '01',
     title: 'Precision over vibes',
     description:
-      'Every system ships with a defined scope, a measurable outcome, and a way to prove it worked. We don’t sell momentum — we sell results you can put in a board deck.',
+      'Every system ships with a defined scope, a measurable outcome, and proof it worked — results for a board deck, not momentum.',
   },
   {
     numeral: '02',
     title: 'Infrastructure, not tricks',
     description:
-      'A workflow that breaks the first time an edge case appears isn’t automation, it’s a liability. We build for the exception, not just the happy path.',
+      'If it breaks on the first edge case, it’s a liability, not automation. We build for exceptions.',
   },
   {
     numeral: '03',
     title: 'Your system, not our lock-in',
     description:
-      'Everything we build is documented and handed over. If you want to bring it in-house in a year, you can. That constraint makes us build better, not worse.',
+      'Everything is documented and handed over. Bring it in-house anytime — that constraint makes us build better.',
   },
   {
     numeral: '04',
     title: 'Restraint as a discipline',
     description:
-      'We turn down work that doesn’t need an AI system — sometimes the honest answer is a simpler fix. Selectivity is why the systems we do build hold up.',
+      'We turn down work that doesn’t need AI — sometimes the honest fix is simpler. That’s why what we build holds up.',
   },
 ];
 
@@ -29,16 +29,16 @@ export const howWeWork = [
   {
     title: 'A boutique studio, not a bench of juniors',
     description:
-      'Every engagement is led directly by the founder and a small collaborator team of senior automation engineers — the same people from the first audit call through to the final handover.',
+      'Every engagement is led by the founder and a small team of senior engineers — the same people from the first call to final handover.',
   },
   {
     title: 'Limited engagements, by design',
     description:
-      'We take a small number of clients per quarter so every build gets full attention. If we’re not the right fit for your timeline, we’ll tell you directly, not string you along.',
+      'A small number of clients per quarter, so every build gets full attention. Wrong fit? We’ll say so directly.',
   },
   {
     title: 'Collaborators, not subcontractors',
     description:
-      'For specialized builds — deep RAG architecture, custom voice tooling — we bring in vetted senior specialists we’ve worked with for years. You always know who’s building your system.',
+      'For specialized builds — RAG architecture, custom voice — we bring in specialists we’ve worked with for years. You always know who’s building.',
   },
 ];

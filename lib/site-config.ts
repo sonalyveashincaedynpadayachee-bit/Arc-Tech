@@ -3,7 +3,7 @@ export const siteConfig = {
   legalName: 'Arc Tech Studio LLC',
   tagline: 'Arc Tech builds the invisible systems that run the business while the founder sleeps.',
   description:
-    'Arc Tech is a boutique AI automation studio that designs and deploys the voice agents, workflow systems, and internal copilots that absorb operations for founder-led businesses.',
+    'Arc Tech designs AI voice agents, workflow systems, and internal copilots for founder-led businesses — live in 6 weeks.',
   url: 'https://arctech.studio',
   city: 'Austin, TX',
   email: 'hello@arctech.studio',

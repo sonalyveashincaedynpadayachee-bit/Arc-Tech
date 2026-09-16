@@ -29,8 +29,8 @@ export default function WorkPage() {
               <em className="metal italic">not slideware.</em>
             </h1>
             <p className="max-w-[58ch] text-lead leading-relaxed text-text-secondary">
-              Four engagements, four industries, one architecture pattern: diagnose the
-              real bottleneck, then build the system that removes it for good.
+              Four engagements, four industries, one pattern: diagnose the real
+              bottleneck, then build the system that removes it for good.
             </p>
           </Reveal>
         </Container>

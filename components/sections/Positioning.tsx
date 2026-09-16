@@ -14,9 +14,9 @@ export function Positioning() {
           <p className="max-w-4xl font-display text-h1 font-normal leading-[1.15] text-text-tertiary">
             Most businesses don&rsquo;t have a{' '}
             <span className="metal">growth problem</span>. They have a{' '}
-            <span className="metal">capacity problem</span> — and the fix isn&rsquo;t
-            hiring faster, it&rsquo;s <span className="metal">building systems that
-            don&rsquo;t need to be managed.</span>
+            <span className="metal">capacity problem</span> — hiring won&rsquo;t fix
+            it,{' '}
+            <span className="metal">systems that run themselves will.</span>
           </p>
         </Reveal>
       </Container>

@@ -37,8 +37,8 @@ export function Hero() {
 
         <Reveal delay={0.55}>
           <p className="max-w-[58ch] text-lead leading-relaxed text-text-secondary">
-            Arc Tech designs and deploys the AI systems that absorb your operations —
-            so your calendar stops being the bottleneck on your growth.
+            Arc Tech builds the AI systems that run your operations — live in 6 weeks,
+            zero new hires.
           </p>
         </Reveal>
 

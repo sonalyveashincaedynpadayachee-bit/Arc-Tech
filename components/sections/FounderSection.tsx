@@ -30,20 +30,19 @@ export function FounderSection() {
 
             <Reveal delay={0.1} className="flex flex-col gap-5 text-body leading-relaxed text-text-secondary">
               <p className="drop-cap">
-                I spent six years building automation and data infrastructure inside
-                venture-backed companies before I started Arc Tech. I kept watching the
-                same pattern: founders who built something worth scaling, then got buried
-                by the operational weight of scaling it.
+                I spent six years building automation inside venture-backed startups
+                before founding Arc Tech in 2023. I kept seeing the same pattern:
+                founders who built something worth scaling, then got buried by the
+                weight of scaling it.
               </p>
               <p>
-                I don&rsquo;t believe automation is a cost center or a nice-to-have. I
-                believe it&rsquo;s the difference between a business that depends on its
-                founder and one that compounds without her. That distinction is the entire
-                premise of this studio.
+                Automation isn&rsquo;t a cost center or a nice-to-have. It&rsquo;s the
+                difference between a business that depends on its founder and one that
+                compounds without her. That&rsquo;s the entire premise of this studio.
               </p>
               <p>
-                I take a small number of engagements a quarter, on purpose. Every system
-                Arc Tech ships has my name on the architecture, not just the invoice.
+                I take on a handful of engagements a quarter, on purpose. My name is on
+                every system&rsquo;s architecture, not just the invoice.
               </p>
             </Reveal>
 

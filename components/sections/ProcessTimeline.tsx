@@ -32,7 +32,7 @@ export function ProcessTimeline() {
                 A repeatable path, <em className="metal italic">not a black box.</em>
               </>
             }
-            lead="Four stages, in the same order, every time. You always know exactly which stage your build is in."
+            lead="Four stages, same order, every time — you always know which stage your build is in."
           />
         </Reveal>
 

@@ -30,8 +30,8 @@ export default function ContactPage() {
             <em className="metal italic">costing you time.</em>
           </h1>
           <p className="text-lead leading-relaxed text-text-secondary">
-            Book a strategy call directly, or send us the details below. Either way,
-            you&rsquo;ll hear from a real person — never a queue.
+            Book a strategy call, or send the details below. Either way, a real person
+            replies — never a queue.
           </p>
         </Reveal>
 
@@ -49,9 +49,8 @@ export default function ContactPage() {
                 Prefer to book directly?
               </h2>
               <p className="text-body leading-relaxed text-text-secondary">
-                Skip the form and grab 30 minutes on our calendar for a live strategy
-                call — no pitch deck, just a working conversation about where automation
-                would actually move the needle for you.
+                Skip the form and grab 30 minutes on the calendar — no pitch deck, just
+                where automation moves the needle for you.
               </p>
               <Button href={siteConfig.calendlyUrl} variant="secondary">
                 Open booking calendar

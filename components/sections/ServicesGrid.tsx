@@ -22,7 +22,7 @@ export function ServicesGrid() {
                 <em className="metal italic">One operating principle.</em>
               </>
             }
-            lead="Every engagement starts from the same question: what is a human doing today that a well-built system could do without them?"
+            lead="Every engagement starts from one question: what is a human doing that a system could do instead?"
           />
         </Reveal>
 
